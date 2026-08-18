@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {  useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -6,6 +6,13 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+  fetch('/api/teste')
+    .then((response) => response.json())
+    .then((data) => { console.log(data) })
+    .catch((error) => {console.error('Erro ao acessar a API:', error)})
+  }, [])
 
   return (
     <>
