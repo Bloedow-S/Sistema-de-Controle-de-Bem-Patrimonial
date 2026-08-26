@@ -13,7 +13,7 @@ class CreateBemPatrimonialTable extends Migration
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
-                'autoincrement' => true, 
+                'auto_increment' => true, 
             ],
 
             'categoria_patrimonio_id' => [

@@ -13,7 +13,7 @@ class CreateMovimentacaoTable extends Migration
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
-                'autoincrement' => true, 
+                'auto_increment' => true, 
             ],
 
             'patrimonio_id' => [

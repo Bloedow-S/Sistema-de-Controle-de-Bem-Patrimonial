@@ -25,6 +25,7 @@ class CreateManutencaoTable extends Migration
             ],
             'data_retorno' => [
                 'type' => 'DATE',
+                'null' => true,
             ],
             'motivo' => [
                 'type' => 'VARCHAR',
@@ -33,6 +34,7 @@ class CreateManutencaoTable extends Migration
             'custo' => [
                 'type' => 'DECIMAL',
                 'constraint' => '10,2',
+                'null' => true,
             ],
             'status' => [
                 'type' => 'VARCHAR',
