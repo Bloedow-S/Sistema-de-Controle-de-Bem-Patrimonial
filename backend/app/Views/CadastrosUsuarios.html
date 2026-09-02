@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastros</title>
+    </head>
+    <body>
+       <h2>Usuários</h2> 
+       <div>
+            <h3><?php echo $titulo; ?></h3>
+            <form method="POST" action="App\Controllers\CadastrosUsuarios\inserir()">
+                <input type="text" id="cod_funcionario_id" name="cod_funcionario_id">
+                <input type="email" id="email" name="email">
+                <input type="password" id="senha" name="senha">
+                <select>
+                    <option value=0>Master?</option> 
+                    <option value=1>Sim</option> 
+                    <option value=0>Não</option> 
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>

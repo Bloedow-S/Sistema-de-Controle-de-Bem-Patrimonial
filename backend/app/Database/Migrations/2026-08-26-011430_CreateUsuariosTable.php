@@ -28,9 +28,10 @@ class CreateUsuariosTable extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ],
-            'master' => [
-                'type' => 'BOOLEAN',
-                'default' => false,
+            'papel' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 20,
+                'default'    => 'operador',
             ],
         ]);
 

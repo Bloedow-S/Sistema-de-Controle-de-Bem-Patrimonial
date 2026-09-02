@@ -9,8 +9,8 @@ class UsuariosModel extends Model
     protected $table            = 'usuarios';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = [cod_funcionario_id, email, senha, master];
-    protected $returnType       = 'array';
+    protected $allowedFields    = ['cod_funcionario_id', 'email', 'senha', 'papel'];
+    protected $returnType       = 'object';
 
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
